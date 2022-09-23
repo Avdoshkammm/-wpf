@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="NewNameOfWindow!" Height="450" Width="800">
+    <Grid x:Name="MainRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan ="5" x:Name="textLabel" Margin="0,0,0,87" Grid.RowSpan="2" FontSize="25"/>
+        <Button Grid.Column="0" Grid.Row="3" Width="200" FontSize="25" Grid.ColumnSpan="2" Margin="0,87,0,0" Grid.RowSpan="2">0</Button>
+        <Button Grid.Column="2" Grid.Row="3" FontSize="25" Margin="0,87,0,0" Grid.RowSpan="2">=</Button>
+        <Button Grid.Column="3" Grid.Row="3" FontSize="25" Margin="0,87,0,0" Grid.RowSpan="2">AC</Button>
+        <Button Grid.Column="0" Grid.Row="2" FontSize="25" Grid.ColumnSpan="2" Margin="0,86,0,0" Grid.RowSpan="2">1</Button>
+        <Button Grid.Column="2" Grid.Row="2" FontSize="25" Margin="0,86,0,0" Grid.RowSpan="2">2</Button>
+        <Button Grid.Column="3" Grid.Row="2" FontSize="25" Margin="0,86,0,0" Grid.RowSpan="2">3</Button>
+        <Button Grid.Column="0" Grid.Row="2" FontSize="25" Grid.ColumnSpan="2">4</Button>
+        <Button Grid.Column="2" Grid.Row="2" FontSize="25">5</Button>
+        <Button Grid.Column="3" Grid.Row="2" FontSize="25">6</Button>
+        <Button Grid.Column="0" Grid.Row="1" FontSize="25" Grid.ColumnSpan="2" Margin="0,0,0,86" Grid.RowSpan="2" Height="87" VerticalAlignment="Bottom">7</Button>
+        <Button Grid.Column="2" Grid.Row="1" FontSize="25" Margin="0,0,0,86" Grid.RowSpan="2">8</Button>
+        <Button Grid.Column="3" Grid.Row="1" FontSize="25" Margin="0,0,0,86" Grid.RowSpan="2">9</Button>
+        <Button Grid.Column="4" Grid.Row="3" FontSize="25" Margin="0,87,0,0" Grid.RowSpan="2">+</Button>
+        <Button Grid.Column="4" Grid.Row="2" FontSize="25" Margin="0,86,0,0" Grid.RowSpan="2">-</Button>
+        <Button Grid.Column="4" Grid.Row="2" FontSize="25">*</Button>
+        <Button Grid.Column="4" Grid.Row="1" FontSize="25" Margin="0,0,0,86" Grid.RowSpan="2">/</Button>
+    </Grid>
+</Window>
